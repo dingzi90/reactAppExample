@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import KanbanBoard from './number1/KanbanBoard';
-import GroceryList from './GroceryList';
+//import KanbanBoard from './number1/KanbanBoard';
+//import GroceryList from './GroceryList';
 import registerServiceWorker from './registerServiceWorker';
-
+import AnimatedShoppingList from './number2/AnimatedShoppingList';
 
 let cardsList = [
 	{
@@ -41,6 +41,6 @@ let cardsList = [
 
 ReactDOM.render(
 	<div>
-		<KanbanBoard  cards={cardsList} />
+		<AnimatedShoppingList />
 	</div>, document.getElementById('root'));
 registerServiceWorker();

@@ -26,3 +26,33 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.example-enter{
+	opacity:0;
+	transform: translateX(-250px);
+}
+.example-enter.example-enter-active{
+	opacity:1;
+	transform: translateX(0);
+	transition:0.3s;
+}
+
+.example-leave{
+	opacity:1;
+	transform: translateX(0);
+}
+.example-leave.example-leave-active{
+	opacity:0;
+	transform: translateX(-250px);
+	transition:0.3s;
+}
+
+.example-appear{
+	opacity:0;
+	transform: translateX(-250px);
+}
+.example-appear.example-appear-active{
+	opacity:1;
+	transform: translateX(0);
+	transition:0.5s;
+}
